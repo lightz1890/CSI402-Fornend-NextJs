@@ -6,7 +6,7 @@ import Form from "@/componnent/Form";
 
 export default function RegisterPage() {
   const handleRegister = (values: Record<string, string>) => {
-    const { username, password } = values;
+    const { username} = values;
     alert(`Registered successfully! Username: ${username}`);
     window.location.href = "/";
   };

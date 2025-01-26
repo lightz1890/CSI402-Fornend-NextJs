@@ -11,13 +11,12 @@ export default function HomePage() {
       alert("Login successful!");
       window.location.href = "/homepage";
     } else {
-      alert("ผู้ใช้งานต้องทำการลงทะเบียนเพื่อใช้งานชั่วคราว สิทธิ์ใช้งานจะสามารถใช้ได้30นาที");
+      alert("กรุณาลงทะเบียนเพื่อใช้สิทธิ์ชั่วคราว(30 นาที)");
     }
   };
 
   return (
     <div style={{ padding: "20px" }}>
-      
 
       <Form
         title="Login"
