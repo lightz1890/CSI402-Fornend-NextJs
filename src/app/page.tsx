@@ -11,14 +11,13 @@ export default function HomePage() {
       alert("Login successful!");
       window.location.href = "/homepage";
     } else {
-      alert("Invalid username or password");
+      alert("ผู้ใช้งานต้องทำการลงทะเบียนเพื่อใช้งานชั่วคราว สิทธิ์ใช้งานจะสามารถใช้ได้30นาที");
     }
   };
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Welcome to the App</h1>
-      <p>Please log in to access your homepage.</p>
+      
 
       <Form
         title="Login"
