@@ -2,37 +2,28 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Clone') {
             steps {
-                git 'https://github.com/lightz1890/CSI402-Fornend-NextJs.git'
+                print "65054917"
+            }
         }
 
         stage('Build') {
             steps {
-                show 'mvn clean package'
+                print "Kittipat"
             }
         }
 
-        stage('Test') {
+        stage('Deploy Img') {
             steps {
-                show 'mvn test'
+                print "deploy Img"
             }
         }
 
-        stage('Deploy') {
-            steps {
-                show 'scp target/your-app.jar user@server:/path/to/deploy'
-            }
-        }
-    }
-
-    post {
-        success {
-            print 'Pipeline succeeded!'
-        }
-        failure {
-
-            print 'Pipeline failed!'
+        stage('Testing') {
+            steps  {
+                print "testing Project"
+             }
         }
     }
 }
